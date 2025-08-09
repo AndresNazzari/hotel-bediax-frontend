@@ -8,6 +8,10 @@
 * **Backend Repository**: [https://github.com/AndresNazzari/HotelBediaX](https://github.com/AndresNazzari/HotelBediaX)
 * **Frontend Repository**: [https://github.com/AndresNazzari/hotel-bediax-frontend](https://github.com/AndresNazzari/hotel-bediax-frontend)
 
+## 🧼 Notes
+- The application communicates with a backend hosted on a free tier instance.
+- ⚠️ **Performance Notice:** If the backend has been idle, the first request can take **up to 50 seconds** to respond while the server starts.
+
 ---
 
 ## 📦 Description
