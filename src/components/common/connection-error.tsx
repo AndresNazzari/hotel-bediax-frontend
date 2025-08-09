@@ -30,7 +30,7 @@ export function ConnectionError({
                 <h3 className="text-sm font-semibold text-destructive">{title}</h3>
                 <p className="text-sm text-muted-foreground">{message}</p>
             </div>
-            <Button onClick={handleRetry}>
+            <Button onClick={handleRetry} className="cursor-pointer">
                 <RotateCw className="mr-2 h-4 w-4" />
                 Retry
             </Button>

@@ -88,6 +88,7 @@ export function AppShell({ children }: Props) {
                             variant="outline"
                             size="icon"
                             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                            className="cursor-pointer"
                         >
                             {theme === "light" ? (
                                 <MoonIcon className="h-4 w-4" />

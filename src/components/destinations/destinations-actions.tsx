@@ -47,13 +47,14 @@ export function DestinationsActions({ destinationId, destinationName }: Props) {
                 size="icon"
                 aria-label="Edit"
                 onClick={() => router.push(`/destinations/${destinationId}/edit`)}
+                className="cursor-pointer"
             >
                 <Pencil className="h-4 w-4" />
             </Button>
 
             <AlertDialog>
                 <AlertDialogTrigger asChild>
-                    <Button variant="destructive" size="icon" aria-label="Delete">
+                    <Button variant="destructive" size="icon" aria-label="Delete" className="cursor-pointer">
                         <Trash2 className="h-4 w-4" />
                     </Button>
                 </AlertDialogTrigger>

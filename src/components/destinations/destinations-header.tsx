@@ -39,7 +39,7 @@ export function DestinationsHeader({ initialFilter = "", pageSize = 20 }: Props)
                     placeholder="Search by name..."
                     className="w-[340px]"
                 />
-                <Button variant="outline" onClick={applyFilter}>
+                <Button variant="outline" className="cursor-pointer" onClick={applyFilter}>
                     Search
                 </Button>
                 <Button asChild>

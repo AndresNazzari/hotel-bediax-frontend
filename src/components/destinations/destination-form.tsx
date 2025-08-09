@@ -189,16 +189,16 @@ export function DestinationForm({
 
                             <div className="flex justify-end gap-2">
                                 {mode !== "view" && (
-                                    <Button type="submit">
+                                    <Button type="submit" className="cursor-pointer">
                                         {mode === "create" ? "Create" : "Save changes"}
                                     </Button>
                                 )}
 
                                 {mode === "view" && !isReadOnly && (
-                                    <Button type="submit">Save changes</Button>
+                                    <Button type="submit" className="cursor-pointer">Save changes</Button>
                                 )}
 
-                                <Button type="button" variant="outline" onClick={() => router.back()}>
+                                <Button type="button" className="cursor-pointer" variant="outline" onClick={() => router.back()}>
                                     Cancel
                                 </Button>
                             </div>
