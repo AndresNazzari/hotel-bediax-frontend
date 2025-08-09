@@ -3,7 +3,7 @@ export default function CatalogsHomePage() {
         <section className="space-y-2">
             <h2 className="text-xl font-semibold">Catalogs</h2>
             <p className="text-sm text-muted-foreground">
-                Seleccioná un catálogo en el menú (Countries / Destination Types).
+                Select a catalog from the menu (Countries / Destination Types).
             </p>
         </section>
     );

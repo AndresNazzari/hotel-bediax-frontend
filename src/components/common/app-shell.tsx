@@ -10,12 +10,13 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { PanelLeftIcon } from "lucide-react";
+import { PanelLeftIcon, SunIcon, MoonIcon } from "lucide-react";
 import { useState, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {buildRouteNameMap} from "@/config/buildRouteNameMap";
 import React from "react";
+import {useTheme} from "next-themes";
 
 type Props = { children: React.ReactNode };
 
@@ -23,6 +24,7 @@ export function AppShell({ children }: Props) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const pathname = usePathname();
     const routeNameMap = useMemo(() => buildRouteNameMap(), []);
+    const { theme, setTheme } = useTheme();
 
     const breadcrumbs = useMemo(() => {
         if (!pathname) return [];
@@ -80,6 +82,19 @@ export function AppShell({ children }: Props) {
                                 </BreadcrumbList>
                             </Breadcrumb>
                         </div>
+
+                        {/* Botón para cambiar tema */}
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                        >
+                            {theme === "light" ? (
+                                <MoonIcon className="h-4 w-4" />
+                            ) : (
+                                <SunIcon className="h-4 w-4" />
+                            )}
+                        </Button>
                     </div>
                 </header>
 
