@@ -1,7 +1,6 @@
 # 🏨 HotelBediaX - Frontend SPA
 
 ## 🔗 Links
-
 * **Frontend**: [https://hotel-bediax-frontend.vercel.app/](https://hotel-bediax-frontend.vercel.app/)
 * **Backend Swagger**: [https://hotelbediax.onrender.com/swagger/index.html](https://hotelbediax.onrender.com/swagger/index.html)
 * **Backend Health**: [https://hotelbediax.onrender.com/health](https://hotelbediax.onrender.com/health)
