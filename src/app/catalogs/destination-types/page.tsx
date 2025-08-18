@@ -21,6 +21,7 @@ export default async function DestinationTypesPage() {
             </section>
         );
     } catch (error) {
+        console.error("Error fetching countries:", error);
         return (
             <section className="space-y-4">
                 <h1 className="text-xl font-semibold">Countries</h1>
