@@ -11,7 +11,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import type { CountryDto, DestinationTypeDto } from "@/types/api";
 
-// Internal form state (allows "" for selects until the user chooses)
 type DestinationFormData = {
     name: string;
     description?: string;
@@ -36,14 +35,7 @@ type Props = {
     onSubmit?: (data: DestinationPersistData) => Promise<void> | void;
 };
 
-export function DestinationForm({
-                                    title,
-                                    initialValues,
-                                    countries,
-                                    destinationTypes,
-                                    mode,
-                                    onSubmit,
-                                }: Props) {
+export function DestinationForm({title, initialValues, countries, destinationTypes, mode, onSubmit,}: Props) {
     const router = useRouter();
     const [isReadOnly, setIsReadOnly] = useState(mode === "view");
 

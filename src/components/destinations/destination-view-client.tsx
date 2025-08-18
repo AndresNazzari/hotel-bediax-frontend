@@ -13,13 +13,8 @@ type Props = {
     initialValues: DestinationPersistData;
 };
 
-export function DestinationViewClient({
-                                          id,
-                                          detailIsActive,
-                                          countries,
-                                          destinationTypes,
-                                          initialValues,
-                                      }: Props) {
+export function DestinationViewClient({id, detailIsActive, countries, destinationTypes, initialValues,}: Props)
+{
     return (
         <DestinationForm
             title={`Destino #${id}`}

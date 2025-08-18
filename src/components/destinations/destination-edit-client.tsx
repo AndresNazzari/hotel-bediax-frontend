@@ -14,13 +14,7 @@ type Props = {
     initialValues: DestinationPersistData;
 };
 
-export function DestinationEditClient({
-                                          id,
-                                          detailIsActive,
-                                          countries,
-                                          destinationTypes,
-                                          initialValues,
-                                      }: Props) {
+export function DestinationEditClient({id, detailIsActive, countries, destinationTypes, initialValues,}: Props) {
     const router = useRouter();
 
     return (
