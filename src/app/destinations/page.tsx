@@ -8,11 +8,8 @@ import type { DestinationDto } from "@/types/api";
 type SearchParams = { page?: string; pageSize?: string; filter?: string };
 export const revalidate = 0;
 
-export default async function DestinationsPage({
-                                                   searchParams,
-                                               }: {
-    searchParams: Promise<SearchParams>;
-}) {
+export default async function DestinationsPage({searchParams}: { searchParams: Promise<SearchParams>;})
+{
     const sp = await searchParams;
     const page = Math.max(parseInt(sp?.page ?? "1", 10) || 1, 1);
     const pageSize = parseInt(sp?.pageSize ?? "20", 10) || 20;
